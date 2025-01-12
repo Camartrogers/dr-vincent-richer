@@ -1,0 +1,18 @@
+# Ignore everything
+*
+!readme.md
+!.gitignore
+# Allow Git to track folders
+!*/
+
+# Allow the specific theme folder
+!wp-content/themes/dr-richer/**
+
+# Ignore node modules
+wp-content/themes/dr-richer/node_modules/*
+
+# Ignore WordPress core files and uploads
+wp-admin/
+wp-includes/
+wp-content/uploads/
+wp-content/plugins/
