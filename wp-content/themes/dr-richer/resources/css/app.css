@@ -1,0 +1,157 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import "../../node_modules/@splidejs/splide/dist/css/splide.min.css";
+
+.font-roboto {
+  font-family: "Roboto Mono", monospace !important;
+}
+.font-manrope {
+  font-family: "Manrope" !important;
+}
+.font-light {
+  font-weight: 300;
+}
+.font-bold {
+  font-weight: 700;
+}
+.font-normal {
+  font-weight: 400;
+}
+
+.main-nav {
+  ul {
+    @apply list-none ml-0 mb-20;
+  }
+  li {
+    @apply text-4xl md:text-lg font-manrope mb-10 md:mb-0;
+    a {
+      @apply text-white md:text-black font-light;
+    }
+  }
+  li.current-menu-item {
+    &:before {
+      content: "• ";
+    }
+    a {
+      @apply text-secondary;
+    }
+  }
+}
+
+.splide__arrows {
+  @apply -bottom-8 right-0 w-full flex justify-end mt-10;
+  .splide__arrow {
+    @apply bg-transparent scale-150 static;
+  }
+}
+
+.mobile-menu {
+  li {
+    @apply mb-10 text-white;
+  }
+  a {
+    @apply text-white;
+  }
+}
+
+/* BLOG */
+.single-page-article {
+  p {
+    @apply font-manrope text-black text-lg;
+  }
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-manrope text-black font-bold;
+  }
+  h2 {
+    @apply text-2xl;
+  }
+  h3 {
+    @apply text-xl;
+  }
+  h4 {
+    @apply text-lg;
+  }
+  img {
+    @apply md:w-2/3 ml-auto rounded-lg;
+  }
+  table {
+    @apply text-black font-manrope;
+  }
+  ul {
+    @apply font-manrope text-black;
+  }
+  a {
+    @apply underline;
+  }
+}
+
+/* CLINIC PAGE */
+.clinic-info {
+  @apply text-black font-manrope;
+  p {
+    @apply mb-0;
+  }
+}
+
+/* FORM */
+.footer-form-home {
+  label {
+    @apply text-black font-manrope w-full;
+  }
+  .wpcf7-form-control-wrap {
+    @apply w-full block;
+  }
+  input,
+  textarea,
+  select {
+    @apply rounded-lg bg-primary w-full p-2;
+  }
+  .wpcf7-submit {
+    @apply font-manrope !bg-blue uppercase text-whitish py-2 !rounded-full;
+  }
+  .wpcf7-radio {
+    .first {
+      @apply ml-0;
+    }
+    input[type="radio"] {
+      @apply w-auto;
+    }
+  }
+  input[type="checkbox"] {
+    @apply inline w-auto;
+  }
+}
+
+.footer-form {
+  label {
+    @apply text-black font-manrope w-full;
+  }
+  .wpcf7-form-control-wrap {
+    @apply w-full block;
+  }
+  input,
+  textarea,
+  select {
+    @apply rounded-lg bg-white w-full p-2;
+  }
+  .wpcf7-submit {
+    @apply font-manrope !bg-primary uppercase text-whitish py-2 !rounded-full;
+  }
+  .wpcf7-radio {
+    .first {
+      @apply ml-0;
+    }
+    input[type="radio"] {
+      @apply w-auto;
+    }
+  }
+  input[type="checkbox"] {
+    @apply inline w-auto;
+  }
+}
