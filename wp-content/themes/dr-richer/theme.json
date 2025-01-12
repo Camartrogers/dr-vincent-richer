@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "settings": {
+    "layout": {
+      "contentSize": "1024px",
+      "wideSize": "1280px"
+    },
+    "color": {
+      "palette": [
+        {
+          "name": "Primary",
+          "slug": "primary",
+          "color": "#A09F85"
+        },
+        {
+          "name": "Secondary",
+          "slug": "secondary",
+          "color": "#8F8E70"
+        },
+        {
+          "name": "Blue Green",
+          "slug": "blue",
+          "color": "#2D5155"
+        },
+        {
+          "name": "White",
+          "slug": "white",
+          "color": "#F5F5F5"
+        },
+        {
+          "name": "Whitish",
+          "slug": "whitish",
+          "color": "#EAE6E1"
+        },
+        {
+          "name": "Black",
+          "slug": "blackish",
+          "color": "#272323"
+        }
+      ]
+    },
+    "typography": {
+      "fontSizes": [
+        {
+          "name": "Extra Large",
+          "slug": "xlarge",
+          "size": "5.3125rem"
+        }
+      ]
+    }
+  }
+}
